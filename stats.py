@@ -14,4 +14,6 @@ def char_freq(text):
                 word_freq[letter] += 1
     return word_freq
 
-
+def sorted_dict(t_dict):
+    # split each key value pair into separate dicts
+    # sort these dicts
