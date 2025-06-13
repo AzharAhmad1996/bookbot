@@ -1,4 +1,4 @@
-from stats import get_book_text, char_freq
+from stats import get_book_text, char_freq, sorted_dict, sorted_on
 
 
 def main():
@@ -6,7 +6,7 @@ def main():
     count = 0
     for word in b_text:
         count += 1
-    print(char_freq(b_text))
+    print(sorted_dict(char_freq(b_text)))
 
 
 if __name__ == "__main__":
