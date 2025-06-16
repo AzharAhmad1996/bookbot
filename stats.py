@@ -1,5 +1,5 @@
 def get_book_text(bookname):
-    with open(f"/Users/kronos/workspaces/github.com/AzharAhmad1996/bookbot/books/{bookname}") as b:
+    with open(f"/Users/kronos/workspaces/github.com/AzharAhmad1996/bookbot/{bookname}") as b:
         b_contents = b.read()
         return b_contents
 
@@ -14,9 +14,5 @@ def char_freq(text):
                 word_freq[letter] += 1
     return word_freq
 
-def sorted_on(t_dict):
-    return t_dict["name"]
-
 def sorted_dict(t_dict):
-    sorted_on(t_dict)
-    return t_dict.sort(reverse=True, key=sorted_on)
+    return sorted(t_dict.items(),reverse=True, key=lambda item : item[1])
